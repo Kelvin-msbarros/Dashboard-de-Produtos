@@ -27,7 +27,7 @@ GO
 INSERT INTO Produtos (Nome, Preco)
 VALUES
 ('Mouse Gamer', 150.00),
-('Teclado Mec‚nico', 350.00),
+('Teclado Mec√¢nico', 350.00),
 ('Monitor 24"', 950.00),
 ('Notebook i5', 3500.00),
 ('Cadeira Gamer', 890.00),
@@ -35,14 +35,14 @@ VALUES
 ('SSD 1TB', 550.00),
 ('Webcam Full HD', 210.00),
 ('Impressora Laser', 650.00),
-('Placa de VÌdeo RTX 3060', 2800.00);
+('Placa de V√≠deo RTX 3060', 2800.00);
 
 ALTER TABLE Produtos
 ADD Categoria VARCHAR(50);
 
 UPDATE Produtos
-SET Categoria = 'PerifÈricos'
-WHERE Nome IN ('Mouse Gamer', 'Teclado Mec‚nico', 'Headset RGB', 'Webcam Full HD');
+SET Categoria = 'Perif√©ricos'
+WHERE Nome IN ('Mouse Gamer', 'Teclado Mec√¢nico', 'Headset RGB', 'Webcam Full HD');
 
 UPDATE Produtos
 SET Categoria = 'Monitores'
@@ -53,7 +53,7 @@ SET Categoria = 'Computadores'
 WHERE Nome = 'Notebook i5';
 
 UPDATE Produtos
-SET Categoria = 'MÛveis'
+SET Categoria = 'M√≥veis'
 WHERE Nome = 'Cadeira Gamer';
 
 UPDATE Produtos
@@ -62,10 +62,10 @@ WHERE Nome = 'SSD 1TB';
 
 UPDATE Produtos
 SET Categoria = 'Componentes'
-WHERE Nome = 'Placa de VÌdeo RTX 3060';
+WHERE Nome = 'Placa de V√≠deo RTX 3060';
 
 UPDATE Produtos
-SET Categoria = 'PerifÈricos'
+SET Categoria = 'Perif√©ricos'
 WHERE Nome = 'Impressora Laser';
 
 
@@ -76,7 +76,7 @@ SELECT Nome, Categoria
 FROM Produtos;
 
 UPDATE Produtos
-SET Categoria = 'PerifÈricos'
+SET Categoria = 'Perif√©ricos'
 WHERE Nome IN ('Mouse', 'Teclado', 'Headset');
 
 UPDATE Produtos
@@ -89,37 +89,37 @@ WHERE Nome = 'Notebook';
 
 INSERT INTO Produtos (Nome, Preco, Categoria)
 VALUES
-('Mouse Gamer', 150.00, 'PerifÈricos'),
-('Teclado Mec‚nico', 350.00, 'PerifÈricos'),
+('Mouse Gamer', 150.00, 'Perif√©ricos'),
+('Teclado Mec√¢nico', 350.00, 'Perif√©ricos'),
 ('Monitor 24"', 950.00, 'Monitores'),
 ('Notebook i5', 3500.00, 'Computadores'),
-('Cadeira Gamer', 890.00, 'MÛveis'),
-('Headset RGB', 320.00, 'PerifÈricos'),
+('Cadeira Gamer', 890.00, 'M√≥veis'),
+('Headset RGB', 320.00, 'Perif√©ricos'),
 ('SSD 1TB', 550.00, 'Armazenamento'),
-('Webcam Full HD', 210.00, 'PerifÈricos'),
-('Impressora Laser', 650.00, 'PerifÈricos'),
-('Placa de VÌdeo RTX 3060', 2800.00, 'Componentes'),
-('Teclado Gamer', 400.00, 'PerifÈricos'),
+('Webcam Full HD', 210.00, 'Perif√©ricos'),
+('Impressora Laser', 650.00, 'Perif√©ricos'),
+('Placa de V√≠deo RTX 3060', 2800.00, 'Componentes'),
+('Teclado Gamer', 400.00, 'Perif√©ricos'),
 ('Monitor 27"', 1350.00, 'Monitores'),
 ('Notebook i7', 4500.00, 'Computadores'),
-('Cadeira Executiva', 1200.00, 'MÛveis'),
-('Headset Profissional', 550.00, 'PerifÈricos'),
+('Cadeira Executiva', 1200.00, 'M√≥veis'),
+('Headset Profissional', 550.00, 'Perif√©ricos'),
 ('HD Externo 2TB', 480.00, 'Armazenamento'),
-('Webcam 4K', 380.00, 'PerifÈricos'),
-('Impressora Multifuncional', 750.00, 'PerifÈricos'),
-('Placa de VÌdeo RTX 3070', 4200.00, 'Componentes'),
+('Webcam 4K', 380.00, 'Perif√©ricos'),
+('Impressora Multifuncional', 750.00, 'Perif√©ricos'),
+('Placa de V√≠deo RTX 3070', 4200.00, 'Componentes'),
 ('Monitor Ultrawide', 2200.00, 'Monitores'),
-('Mouse Sem Fio', 180.00, 'PerifÈricos'),
-('Teclado Sem Fio', 300.00, 'PerifÈricos'),
+('Mouse Sem Fio', 180.00, 'Perif√©ricos'),
+('Teclado Sem Fio', 300.00, 'Perif√©ricos'),
 ('Notebook Gamer', 7000.00, 'Computadores'),
-('Cadeira Gamer RGB', 950.00, 'MÛveis'),
+('Cadeira Gamer RGB', 950.00, 'M√≥veis'),
 ('SSD 2TB', 950.00, 'Armazenamento'),
-('Webcam HD', 180.00, 'PerifÈricos'),
-('Impressora 3D', 2500.00, 'PerifÈricos'),
-('Placa de VÌdeo RTX 3080', 6000.00, 'Componentes'),
+('Webcam HD', 180.00, 'Perif√©ricos'),
+('Impressora 3D', 2500.00, 'Perif√©ricos'),
+('Placa de V√≠deo RTX 3080', 6000.00, 'Componentes'),
 ('Monitor 32" 4K', 3500.00, 'Monitores'),
-('Mousepad Gamer', 90.00, 'PerifÈricos'),
-('Teclado Mec‚nico RGB', 450.00, 'PerifÈricos');
+('Mousepad Gamer', 90.00, 'Perif√©ricos'),
+('Teclado Mec√¢nico RGB', 450.00, 'Perif√©ricos');
 
 ALTER TABLE Produtos
 ADD Estado VARCHAR(50),
@@ -127,7 +127,7 @@ ADD Estado VARCHAR(50),
 
 	UPDATE Produtos
 SET Estado = 'SP', Loja = 'Loja Central'
-WHERE Nome IN ('Mouse Gamer', 'Teclado Mec‚nico', 'Monitor 24"', 'Notebook i5', 'Cadeira Gamer');
+WHERE Nome IN ('Mouse Gamer', 'Teclado Mec√¢nico', 'Monitor 24"', 'Notebook i5', 'Cadeira Gamer');
 
 UPDATE Produtos
 SET Estado = 'RJ', Loja = 'Loja Barra'
@@ -135,7 +135,7 @@ WHERE Nome IN ('Headset RGB', 'SSD 1TB', 'Webcam Full HD');
 
 UPDATE Produtos
 SET Estado = 'MG', Loja = 'Loja Belo Horizonte'
-WHERE Nome IN ('Impressora Laser', 'Placa de VÌdeo RTX 3060');
+WHERE Nome IN ('Impressora Laser', 'Placa de V√≠deo RTX 3060');
 
 UPDATE Produtos
 SET Estado = 'SP', Loja = 'Loja Central'
@@ -147,20 +147,20 @@ WHERE Nome IN ('Headset Profissional', 'HD Externo 2TB', 'Webcam 4K');
 
 UPDATE Produtos
 SET Estado = 'MG', Loja = 'Loja Belo Horizonte'
-WHERE Nome IN ('Impressora Multifuncional', 'Placa de VÌdeo RTX 3070', 'Monitor Ultrawide');
+WHERE Nome IN ('Impressora Multifuncional', 'Placa de V√≠deo RTX 3070', 'Monitor Ultrawide');
 
 INSERT INTO Produtos (Nome, Preco, Categoria, Estado, Loja)
 VALUES 
-('Mouse Sem Fio', 180.00, 'PerifÈricos', 'SP', 'Loja Central'),
-('Teclado Sem Fio', 300.00, 'PerifÈricos', 'RJ', 'Loja Barra'),
+('Mouse Sem Fio', 180.00, 'Perif√©ricos', 'SP', 'Loja Central'),
+('Teclado Sem Fio', 300.00, 'Perif√©ricos', 'RJ', 'Loja Barra'),
 ('Notebook Gamer', 7000.00, 'Computadores', 'MG', 'Loja Belo Horizonte'),
-('Cadeira Gamer RGB', 950.00, 'MÛveis', 'SP', 'Loja Central'),
+('Cadeira Gamer RGB', 950.00, 'M√≥veis', 'SP', 'Loja Central'),
 ('SSD 2TB', 950.00, 'Armazenamento', 'RJ', 'Loja Barra');
 
 
 UPDATE Produtos
 SET Estado = 'SP', Loja = 'Loja Central'
-WHERE Estado IS NULL AND Nome IN ('Mouse', 'Teclado', 'Mouse Sem Fio', 'Teclado Sem Fio', 'Mousepad Gamer', 'Teclado Mec‚nico RGB');
+WHERE Estado IS NULL AND Nome IN ('Mouse', 'Teclado', 'Mouse Sem Fio', 'Teclado Sem Fio', 'Mousepad Gamer', 'Teclado Mec√¢nico RGB');
 
 UPDATE Produtos
 SET Estado = 'RJ', Loja = 'Loja Barra'
@@ -168,7 +168,7 @@ WHERE Estado IS NULL AND Nome IN ('Headset', 'Webcam HD');
 
 UPDATE Produtos
 SET Estado = 'MG', Loja = 'Loja Belo Horizonte'
-WHERE Estado IS NULL AND Nome IN ('Notebook Gamer', 'Cadeira Gamer RGB', 'SSD 2TB', 'Impressora 3D', 'Placa de VÌdeo RTX 3080', 'Monitor 32\" 4K');
+WHERE Estado IS NULL AND Nome IN ('Notebook Gamer', 'Cadeira Gamer RGB', 'SSD 2TB', 'Impressora 3D', 'Placa de V√≠deo RTX 3080', 'Monitor 32\" 4K');
 
 
 CREATE TABLE Categorias (
@@ -195,8 +195,8 @@ CREATE TABLE Produtos (
 
 
 INSERT INTO Categorias (Nome)
-VALUES ('PerifÈricos'), ('Monitores'), ('Computadores'),
-       ('MÛveis'), ('Armazenamento'), ('Componentes');
+VALUES ('Perif√©ricos'), ('Monitores'), ('Computadores'),
+       ('M√≥veis'), ('Armazenamento'), ('Componentes');
 
 INSERT INTO Lojas (Nome, Estado)
 VALUES ('Loja Central', 'SP'),
@@ -256,8 +256,8 @@ WHERE Estado IS NULL
 
 
   UPDATE Produtos
-SET Categoria = 'PerifÈricos'
-WHERE Nome IN ('Mouse Gamer', 'Teclado Mec‚nico', 'Headset RGB', 'Webcam Full HD', 'Impressora Laser')
+SET Categoria = 'Perif√©ricos'
+WHERE Nome IN ('Mouse Gamer', 'Teclado Mec√¢nico', 'Headset RGB', 'Webcam Full HD', 'Impressora Laser')
   AND Categoria IS NULL;
 
 -- Monitores
@@ -272,9 +272,9 @@ SET Categoria = 'Computadores'
 WHERE Nome IN ('Notebook i5')
   AND Categoria IS NULL;
 
--- MÛveis
+-- M√≥veis
 UPDATE Produtos
-SET Categoria = 'MÛveis'
+SET Categoria = 'M√≥veis'
 WHERE Nome IN ('Cadeira Gamer')
   AND Categoria IS NULL;
 
@@ -287,7 +287,7 @@ WHERE Nome IN ('SSD 1TB')
 -- Componentes
 UPDATE Produtos
 SET Categoria = 'Componentes'
-WHERE Nome IN ('Placa de VÌdeo RTX 3060')
+WHERE Nome IN ('Placa de V√≠deo RTX 3060')
   AND Categoria IS NULL;
 
 
@@ -325,50 +325,4 @@ JOIN Produtos p ON v.IdProduto = p.Id;
 
 
 
-CREATE DATABASE LIVRARIA;
-GO
 
-USE LIVRARIA;
-GO
-
-CREATE TABLE LIVROS (
-    ID INT IDENTITY(1,1) PRIMARY KEY,
-    TITULO VARCHAR(100) NOT NULL,
-    AUTOR VARCHAR(100),
-    EMAIL VARCHAR(100),
-    PAGINAS INT,
-    EDITORA VARCHAR(100),
-    VALOR DECIMAL(10,2),
-    ESTADO CHAR(2),
-    ANO CHAR(4)
-);
-
-SELECT * FROM LIVROS;
-
-
-INSERT INTO LIVROS (TITULO, AUTOR, EMAIL, PAGINAS, EDITORA, VALOR, ESTADO, ANO)
-VALUES
-('Cavaleiro Real','Ana Claudia','ana@email.com',465,'Atlas',49.90,'RJ','2009'),
-
-('SQL para leigos','Jo„o Nunes','joao@email.com',450,'Addison',98.00,'SP','2018'),
-
-('Receitas Caseiras','Celia Tavares','celia@email.com',210,'Atlas',45.00,'RJ','2008'),
-
-('Pessoas Efetivas','Eduardo Santos','eduardo@email.com',390,'Beta',79.00,'RJ','2018'),
-
-('H·bitos Saud·veis','Eduardo Santos',NULL,630,'Beta',151.00,'RJ','2019'),
-
-('A Casa Marrom','Hermes Macedo','hermes@email.com',250,'Bubba',60.00,'MG','2016'),
-
-('Est·cio Querido','Geraldo Francisco','geraldo@email.com',310,'Insignia',100.00,'ES','2015'),
-
-('Pra sempre amigas','Leda Silva','leda@email.com',510,'Insignia',100.00,'ES','2011'),
-
-('Copas InesquecÌveis','Marco Alcantara','marco@email.com',200,'Larson',131.00,'RS','2018'),
-
-('O poder da mente','Clara Mafra','clara@email.com',120,'Continental',57.00,'SP','2017');
-
-
-UPDATE LIVROS
-SET EMAIL = 'eduardo.santos@email.com'
-WHERE TITULO = 'H·bitos Saud·veis';
